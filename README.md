@@ -1,12 +1,12 @@
 A python script to change the Desktop Background on your Linux Box.
 
-Installations: 
+<em>Installations:</em> 
 
 sudo apt-get install feh
 
 sudo pip install beautifulsoup4
 
-Usage:- 
+<em>Usage:-</em> 
 
 python nasa_background.py
 
