@@ -9,7 +9,7 @@ response.close()
 
 soup = BeautifulSoup(content)
 
-url=url+str(re.search(r'"([A-Za-z0-9_\./\\-]*)"', str(soup.find_all('a')[
+url=url+str(re.search(r'"([A-Za-z0-9_\./\\-]*)"', str(soup.find_all('a')[1])).group())[1:-1]
 response=urllib2.urlopen(url)
 store = open ( str(datetime.date.today())+".jpg" , 'w')
 store.write ( response.read())
